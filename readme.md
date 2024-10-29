@@ -53,4 +53,7 @@ Para futuro, y para que la experiencia de un ecommerce sea completa, se deberá 
 > - py manage.py createsuperuser (email, first name, age, password)
 > - py manage.py runserver
 
+## Link del deploy en RENDER para testing:
+[DjangoProject](https://djangoproject-vhzc.onrender.com)
+
 # Muchas gracias!
