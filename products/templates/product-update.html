@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block title %} Update {% endblock title %}
+{% block title_h1 %} Update {% endblock title_h1 %}
+{% block title_h2 %} your product. {% endblock title_h2 %}
+{% block content %}
+<div class="row justify-content-center align-items-center m-5">
+    <form action="{% url 'product-update' product.id %}" method="POST" class="col-4">
+        {% csrf_token %}
+        {{form.as_p}}
+        <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-warning mx-4">Update</button>
+            <a href="{% url 'product-delete' product.id %}" class="btn btn-danger mx-4">Delete</a>
+            <a class="btn btn-primary mx-4" aria-current="page" href="{% url 'home' %}">Home</a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
